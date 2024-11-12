@@ -1,6 +1,6 @@
-$(document).ready(function () {
+ifUserInSession("index.html");
 
-	ifUserInSession("index.html");
+$(document).ready(function () {
 
 	function getCurrentTimestamp() {
 		let current = new Date();

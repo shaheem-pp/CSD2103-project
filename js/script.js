@@ -11,3 +11,4 @@ function ifUserInSession(goto) {
 		window.location.href = goto;
 	}
 }
+

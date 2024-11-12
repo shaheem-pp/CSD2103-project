@@ -1,5 +1,7 @@
-$(document).ready(function () {
+ifUserInSession("index.html");
 
-	ifUserInSession("index.html");
+$(document).ready(function() {
+
+	
 
 });
