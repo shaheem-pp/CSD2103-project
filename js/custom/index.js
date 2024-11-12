@@ -1,5 +1,5 @@
 $(document).ready(function () {
 
-	ifUserInSession("index.html");
+	ifNotUserInSession();
 
 });

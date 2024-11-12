@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+	ifUserInSession("index.html");
+
 	function getCurrentTimestamp() {
 		let current = new Date();
 		let date = current.toLocaleDateString("en-CA");
