@@ -1,54 +1,73 @@
+$(document).ready(function () {
+	function getCurrentTimestamp() {
+		let current = new Date();
+		let date = current.toLocaleDateString("en-CA");
+		let time = current.toLocaleTimeString("en-US", {
+			hour: '2-digit',
+			minute: '2-digit'
+		});
+		return `${date} ${time}`;
+	}
 
-document.getElementById('showPassword').addEventListener('change', function () {
-    const passwordInput = document.getElementById('password');
-    passwordInput.type = this.checked ? 'text' : 'password';
-});
+	function getStoredUsers() {
+		const users = localStorage.getItem("users");
+		return users ? JSON.parse(users) : [];
+	}
 
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+	function saveUsers(users) {
+		localStorage.setItem("users", JSON.stringify(users));
+	}
 
-    if (phone.length !== 10 || isNaN(phone)) {
-        alert('Phone number must be 10 digits');
-        return;
-    }
+	function validateForm(name, email, password) {
+		if (!name || !email || !password) {
+			alert("All fields are required.");
+			return false;
+		}
+		// Basic email pattern validation
+		const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailPattern.test(email)) {
+			alert("Please enter a valid email address.");
+			return false;
+		}
+		return true;
+	}
 
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailPattern.test(email)) {
-        alert('Invalid email address');
-        return;
-    }
+	$('#submitBtn').on('click', function (e) {
+		e.preventDefault();
 
-    fetch('users.json')
-        .then(response => response.json())
-        .then(users => {
-            if (users.some(user => user.email === email)) {
-                alert('Email already exists');
-                return;
-            }
+		const name = $('#name').val().trim();
+		const email = $('#email').val().trim();
+		const password = $('#password').val().trim();
 
-            const newUser = {
-                id: Date.now(), // Simple user ID using timestamp
-                name: name,
-                phone: phone,
-                email: email,
-                password: password
-            };
+		if (!validateForm(name, email, password)) return;
 
-            users.push(newUser);
-            localStorage.setItem('userID', newUser.id); // Simulate session
+		const users = getStoredUsers();
 
-            // Save updated users list to users.json
-            fetch('users.json', {
-                method: 'POST',
-                body: JSON.stringify(users),
-                headers: { 'Content-Type': 'application/json' }
-            });
+		const emailExists = users.some(user => user.username === email);
+		if (emailExists) {
+			alert("Email is already registered. Please use another email.");
+			return;
+		}
 
-            window.location.href = 'index.html'; // Redirect to homepage
-        });
+		const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
+
+		const newUser = {
+			id: newId,
+			name: name,
+			username: email,
+			password: password,
+			created: getCurrentTimestamp(),
+			is_deleted: false,
+			is_admin: false
+		};
+
+		users.push(newUser);
+		saveUsers(users);
+
+		sessionStorage.setItem("userId", newId);
+
+		alert("Signup successful!");
+
+		window.location.href = "index.html";
+	});
 });

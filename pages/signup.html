@@ -5,34 +5,46 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Signup</title>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 	<div class="container">
-		<h2>Signup</h2>
-		<form id="signupForm">
-			<div class="mb-3">
-				<label for="name" class="form-label">Name</label>
-				<input type="text" class="form-control" id="name" required>
+
+		<div class="center-hv">
+			<div class="card shadow">
+				<div class="card-body">
+					<h1 class="text-center mb-5">Signup</h1>
+					<form action="">
+						<!-- name -->
+						<div class="mb-3">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control" id="name" aria-describedby="nameField" required>
+						</div>
+						<!-- username -->
+						<div class="mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" aria-describedby="emailField" required>
+						</div>
+						<!-- password -->
+						<div class="mb-3">
+							<label for="password" class="form-label">Password</label>
+							<input type="password" class="form-control" id="password" aria-describedby="passwordField"
+								required>
+						</div>
+
+						<button id="submitBtn" type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+					</form>
+				</div>
 			</div>
-			<div class="mb-3">
-				<label for="phone" class="form-label">Phone</label>
-				<input type="text" class="form-control" id="phone" required>
-			</div>
-			<div class="mb-3">
-				<label for="email" class="form-label">Email</label>
-				<input type="email" class="form-control" id="email" required>
-			</div>
-			<div class="mb-3">
-				<label for="password" class="form-label">Password</label>
-				<input type="password" class="form-control" id="password" required>
-				<input type="checkbox" id="showPassword"> Show Password
-			</div>
-			<button type="submit" class="btn btn-primary">Signup</button>
-			<p>Already have an account? <a href="login.html">Login</a></p>
-		</form>
+		</div>
+
 	</div>
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/custom/signup.js"></script>

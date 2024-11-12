@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "admin",
+        "username": "adminCSDProject",
+        "password": "Password0f.project",
+		"created": "2024-11-10 12:30PM",
+		"is_deleted": false,
+		"is_admin":true
+	}
+]

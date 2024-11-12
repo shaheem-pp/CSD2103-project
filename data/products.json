@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "name": "productName",
+		"description": "Description of the product",
+		"price"   :"$5.99",
+		"is_deleted":true
+    }
+]
