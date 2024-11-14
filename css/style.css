@@ -1,20 +1,20 @@
-.center-hv{
+.center-hv {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	width: 70%;
 }
 
-.product-desciption-line-limit{
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.product-desciption-line-limit {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.product-img-card{
+.product-img-card {
 	height: 300px;
 	width: auto;
 	object-fit: cover;

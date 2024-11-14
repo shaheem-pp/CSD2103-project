@@ -1,12 +1,10 @@
-[
-    {
-        "id": 1,
-        "name": "Oversized Fit Hooded Jacket",
-		"description": "Oversized hooded sweatshirt jacket in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside. Jersey-lined, drawstring hood, zipper at front, and front pockets. Dropped shoulders, long sleeves, and ribbing at cuffs and hem.\nArt. No.:1240531005\nModel size: The model is 185cm/6'1\" and wears a size L\nLength: Regular length Sleeve \nLength: Long sleeve \nFit: Oversized \nStyle: Baggy, Hooded jacket \nDescription: Light gray melange",
-		"price"   :"$39.99",
-		"category":"men",
-		"image":"../images/Oversized Fit Hooded Jacket Light Gray.avif",
-		"quantity":10,
-		"is_deleted":false
-    }
-]
+[{
+	"id": 1,
+	"name": "Oversized Fit Hooded Jacket",
+	"description": "Oversized hooded sweatshirt jacket in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside. Jersey-lined, drawstring hood, zipper at front, and front pockets. Dropped shoulders, long sleeves, and ribbing at cuffs and hem.\nArt. No.:1240531005\nModel size: The model is 185cm/6'1\" and wears a size L\nLength: Regular length Sleeve \nLength: Long sleeve \nFit: Oversized \nStyle: Baggy, Hooded jacket \nDescription: Light gray melange",
+	"price": "$39.99",
+	"category": "men",
+	"image": "../images/Oversized Fit Hooded Jacket Light Gray.avif",
+	"quantity": 10,
+	"is_deleted": false
+}]
