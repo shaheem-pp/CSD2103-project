@@ -1,6 +1,8 @@
 ifNotUserInSession();
 
 $(document).ready(function () {
+
+
 	const productContainer = $('#productContainer');
 
 	function displayProducts(category) {
