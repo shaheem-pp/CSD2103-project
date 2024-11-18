@@ -5,6 +5,10 @@ $(document).ready(function () {
 		return urlParams.get('id');
 	}
 
+	function formatDescription(description) {
+		return description.replace(/\n/g, '<br>');
+	}
+
 	$.getJSON("../data/products.json", function (data) {
 		const productId = getProductIdFromUrl();
 
@@ -18,7 +22,7 @@ $(document).ready(function () {
 			$("#product-title").text(product.name);
 			$("#product-price").text(product.price);
 			$("#product-category").text(`Category: ${product.category}`);
-			$("#product-description").text(product.description);
+			$("#product-description").html(formatDescription(product.description));
 			$("#product-stock").text(`In Stock: ${product.quantity}`);
 			$("#product-image").attr("src", product.image);
 		} else {

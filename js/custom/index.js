@@ -17,9 +17,8 @@ $(document).ready(function () {
 								<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
 								<div class="card-body">
 									<a href="product-detail.html?id=${product.id}"><h3 class="card-title">${product.name}</h3></a>
-									<p class="card-text product-desciption-line-limit">${product.description}</p>
+									<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
 									<p class="card-text"><strong>Price: ${product.price}</strong></p>
-									<p class="card-text"><small class="text-muted">Category: ${product.category}</small></p>
 								</div>
 							</div>
 						</div>`;
