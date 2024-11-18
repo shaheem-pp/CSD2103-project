@@ -4,13 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index</title>
+	<title>Product Detail</title>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js"
 		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
 	<script src="https://kit.fontawesome.com/33fa90f288.js" crossorigin="anonymous"></script>
-
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
@@ -43,38 +41,24 @@
 		</div>
 	</nav>
 
-
 	<div class="container mt-5">
-
 		<div class="row">
 			<div class="col col-md-6 p-2">
-				<img src="../images/Oversized Fit Hooded Jacket Light Gray.avif" alt="" style="width: 100%;">
+				<img id="product-image" src="" alt="Product Image" style="width: 100%;">
 			</div>
 			<div class="col col-md-6 p-2">
-				<h1>Title</h1>
-				<h5>Price</h5>
-				<p class="text-muted">Category: Men</p>
-				<p style="text-align: justify;">Oversized hooded sweatshirt jacket in heavyweight, cotton-blend fabric
-					with a baggy, extra-loose
-					silhouette and
-					soft, brushed inside. Jersey-lined, drawstring hood, zipper at front, and front pockets. Dropped
-					shoulders, long
-					sleeves, and ribbing at cuffs and hem.\nArt. No.:1240531005\nModel size: The model is 185cm/6'1\"
-					and wears a
-					size L\nLength: Regular length Sleeve \nLength: Long sleeve \nFit: Oversized \nStyle: Baggy, Hooded
-					jacket
-					\nDescription: Light gray melange</p>
-				<p>In Stock: 10</p>
+				<h1 id="product-title"></h1>
+				<h5 id="product-price"></h5>
+				<p id="product-category" class="text-muted"></p>
+				<p id="product-description" style="text-align: justify;"></p>
+				<p id="product-stock"></p>
 			</div>
 		</div>
-
 	</div>
-
-
 
 	<script src="../js/script.js"></script>
 	<script src="../js/bootstrap.js"></script>
-	<script src="../js/custom/index.js"></script>
+	<script src="../js/custom/product-detail.js"></script>
 </body>
 
 </html>
