@@ -1,11 +1,33 @@
 [{
-	"id": 1,
-	"name": "Oversized Fit Hooded Jacket",
-	"shortdescription": "Oversized hooded sweatshirt jacket in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside.",
-	"description": "<p><strong>Oversized hooded sweatshirt jacket</strong> in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside.</p><ul><li><strong>Features:</strong></li><ul><li>Jersey-lined, drawstring hood</li><li>Zipper at front</li><li>Front pockets</li><li>Dropped shoulders</li><li>Long sleeves</li><li>Ribbing at cuffs and hem</li></ul><li><strong>Art. No.:</strong> 1240531005</li><li><strong>Model size:</strong> The model is 185cm/6'1\" and wears a size L</li><li><strong>Length:</strong> Regular length</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Oversized</li><li><strong>Style:</strong> Baggy, Hooded jacket</li><li><strong>Description:</strong> Light gray melange</li></ul>",
-	"price": "$39.99",
-	"category": "men",
-	"image": "../images/Oversized Fit Hooded Jacket Light Gray.avif",
-	"quantity": 10,
-	"is_deleted": false
-}]
+		"id": 1,
+		"name": "Oversized Fit Hooded Jacket",
+		"shortdescription": "Oversized hooded sweatshirt jacket in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside.",
+		"description": "<p><strong>Oversized hooded sweatshirt jacket</strong> in heavyweight, cotton-blend fabric with a baggy, extra-loose silhouette and soft, brushed inside.</p><ul><li><strong>Features:</strong></li><ul><li>Jersey-lined, drawstring hood</li><li>Zipper at front</li><li>Front pockets</li><li>Dropped shoulders</li><li>Long sleeves</li><li>Ribbing at cuffs and hem</li></ul><li><strong>Art. No.:</strong> 1240531005</li><li><strong>Model size:</strong> The model is 185cm/6'1\" and wears a size L</li><li><strong>Length:</strong> Regular length</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Oversized</li><li><strong>Style:</strong> Baggy, Hooded jacket</li><li><strong>Description:</strong> Light gray melange</li></ul>",
+		"price": "$39.99",
+		"category": "men",
+		"size": [
+			"XS", "XL", "XXL"
+		],
+		"color": "Light Gray",
+		"colorCode": "#D3D3D3",
+		"image": "../images/Oversized Fit Hooded Jacket Light Gray.avif",
+		"quantity": 10,
+		"is_deleted": false
+	},
+	{
+		"id": 2,
+		"name": "Slim Fit Denim Jacket",
+		"shortdescription": "Slim fit denim jacket in medium-wash blue with a classic, tailored silhouette and button-down front.",
+		"description": "<p><strong>Slim fit denim jacket</strong> in medium-wash blue with a classic, tailored silhouette and button-down front.</p><ul><li><strong>Features:</strong></li><ul><li>Button-down front</li><li>Chest pockets</li><li>Two side pockets</li><li>Button cuffs</li><li>Ribbed back panel</li></ul><li><strong>Art. No.:</strong> 1240531006</li><li><strong>Model size:</strong> The model is 185cm/6'1\" and wears a size M</li><li><strong>Length:</strong> Regular length</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Slim</li><li><strong>Style:</strong> Classic denim jacket</li><li><strong>Description:</strong> Medium blue wash</li></ul>",
+		"price": "$49.99",
+		"category": "men",
+		"size": [
+			"S", "M", "L"
+		],
+		"color": "Medium Blue",
+		"colorCode": "#5F8FB4",
+		"image": "https://m.media-amazon.com/images/I/61RQyLTPnfL._AC_UY1000_.jpg",
+		"quantity": 15,
+		"is_deleted": false
+	}
+]
