@@ -1,29 +1,43 @@
 ifNotUserInSession();
 
 $(document).ready(function () {
-
-
 	const productContainer = $('#productContainer');
 
-	function displayProducts(category) {
+	function displayProducts(category, searchQuery = '') {
 		productContainer.fadeOut(300, function () {
 			$.getJSON('../data/products.json', function (data) {
 				productContainer.empty();
-				const filteredData = category === 'all' ? data : data.filter(product => product.category === category);
-				filteredData.forEach(product => {
-					let productCard = `
-						<div class="col-md-3 mb-4">
-							<div class="card h-100">
-								<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
-								<div class="card-body">
-									<a href="product-detail.html?id=${product.id}"><h3 class="card-title">${product.name}</h3></a>
-									<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
-									<p class="card-text"><strong>Price: ${product.price}</strong></p>
-								</div>
-							</div>
-						</div>`;
-					productContainer.append(productCard);
+
+				const filteredData = data.filter(product => {
+					const matchesCategory = category === 'all' || product.category === category;
+					const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+						product.shortdescription.toLowerCase().includes(searchQuery.toLowerCase());
+					return matchesCategory && matchesSearch;
 				});
+
+				if (filteredData.length === 0) {
+					productContainer.append(`
+						<div class="alert alert-danger text-center w-100" role="alert">
+							No product found
+						</div>
+					`);
+				} else {					
+					filteredData.forEach(product => {
+						let productCard = `
+							<div class="col-md-3 mb-4">
+								<div class="card h-100">
+									<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
+									<div class="card-body">
+										<a href="product-detail.html?id=${product.id}"><h3 class="card-title">${product.name}</h3></a>
+										<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
+										<p class="card-text"><strong>Price: ${product.price}</strong></p>
+									</div>
+								</div>
+							</div>`;
+						productContainer.append(productCard);
+					});
+				}
+
 				productContainer.fadeIn(300);
 			}).fail(function () {
 				console.error("Error loading products.json");
@@ -35,7 +49,13 @@ $(document).ready(function () {
 		const category = $(this).text().toLowerCase();
 		$('.btn').removeClass('btn-dark').addClass('btn-light');
 		$(this).removeClass('btn-light').addClass('btn-dark');
-		displayProducts(category);
+		displayProducts(category, $('#search').val());
+	});
+
+	$('#search').on('input', function () {
+		const category = $('.btn-dark').text().toLowerCase();
+		const searchQuery = $(this).val();
+		displayProducts(category, searchQuery);
 	});
 
 	displayProducts('all');
