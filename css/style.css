@@ -39,18 +39,22 @@
 	}
 }
 
-/* #product-image-div {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid #c0c0c0;
-	border-radius: 1rem;
+
+.card-link {
+	text-decoration: none;
+	color: inherit;
 }
 
-@media (max-width: 768px) {
-	#product-image-div {
-		border: none;
-		border-radius: 0;
-	}
-} */
+.hover-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.hover-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+	
+}

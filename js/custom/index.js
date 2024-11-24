@@ -21,18 +21,20 @@ $(document).ready(function () {
 							No product found
 						</div>
 					`);
-				} else {					
+				} else {
 					filteredData.forEach(product => {
 						let productCard = `
 							<div class="col-md-3 mb-4">
-								<div class="card h-100">
-									<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
-									<div class="card-body">
-										<a href="product-detail.html?id=${product.id}"><h3 class="card-title">${product.name}</h3></a>
-										<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
-										<p class="card-text"><strong>Price: ${product.price}</strong></p>
+								<a href="product-detail.html?id=${product.id}" class="card-link">
+									<div class="card h-100 hover-card">
+										<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
+										<div class="card-body">
+											<h3 class="card-title">${product.name}</h3>
+											<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
+											<p class="card-text"><strong>Price: ${product.price}</strong></p>
+										</div>
 									</div>
-								</div>
+								</a>
 							</div>`;
 						productContainer.append(productCard);
 					});
