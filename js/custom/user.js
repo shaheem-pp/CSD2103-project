@@ -29,6 +29,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary" id="updateUser">Update</button>
+					<button type="button" class="btn btn-danger" id="signOutUser">Sign out</button>
                 </form>
             `);
 		}
@@ -56,6 +57,13 @@ $(document).ready(function () {
 			alert('User details updated successfully!');
 			$('#userName').text(user.name);
 		});
+
+		$('#signOutUser').click(function () {
+			sessionStorage.removeItem('userId');
+			window.location.href = 'login.html';
+			alert('Signed out successfully!');
+		});
+
 	} else {
 		alert('User not found or session expired.');
 	}
