@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Product Detail</title>
+
+	<title>User Details</title>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js"
 		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -12,9 +14,10 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
+
 </head>
 
-<body class="bg-light bg-gradient">
+<body>
 
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container-fluid">
@@ -29,51 +32,26 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item order-md-last">
-						<a class="nav-link" aria-current="page" href="index.html">
+						<a class="nav-link" aria-current="page" href="#">
 							<i class="fa-solid fa-house"></i> Home
 						</a>
 					</li>
 				</ul>
-				<a class="nav-link active order-lg-last ms-lg-auto" aria-current="page" href="user.html">
+				<a class="nav-link active order-lg-last ms-lg-auto" aria-current="page" href="#">
 					<i class="fa-solid fa-user"></i> <span id="greetings">User</span>
 				</a>
 			</div>
 		</div>
 	</nav>
 
-	<div class="m-5">
-		<div class="row">
-			<div id="product-image-div" class="col col-12 col-md-6 p-2">
-				<img id="product-image" src="" alt="Product Image">
-			</div>
-			<div class="col col-12 col-md-6 p-2">
-				<h1 id="product-title"></h1>
-				<h5 id="product-price"></h5>
-				<p id="product-category" class="text-muted m-0 p-0"></p>
-				<p id="available-colors"></p>
-				<p id="product-description" style="text-align: justify;"></p>
-				<div id="available-sizes" class="d-flex flex-wrap my-1"></div>								
-				<div class="input-group">
-					<button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
-					<input type="number" class="form-control" id="quantity" value="1" min="0" max="5" readonly
-						class="text-center">
-					<button class="btn btn-outline-secondary" type="button" id="increment">+</button>
-				</div>
-				<p class="text-muted d-flex ms-auto" id="inStock" style="font-size: .8rem;justify-content: flex-end;">
-				</p>
-				<br>
-				<button class="btn w-100 btn-primary bg-gradient"><i class="fa-solid fa-lock"></i>&nbsp;Place
-					Order</button>
-
-
-
-			</div>
-		</div>
+	<div class="container mt-5">
+		<h1 class="display-5">Profile</h1>
+		<div class="form"></div>
 	</div>
 
 	<script src="../js/script.js"></script>
 	<script src="../js/bootstrap.js"></script>
-	<script src="../js/custom/product-detail.js"></script>
+	<script src="../js/custom/user.js"></script>
 </body>
 
 </html>
