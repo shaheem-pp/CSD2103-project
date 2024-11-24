@@ -54,3 +54,45 @@
 	transform: translateY(-8px);
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
+
+
+.order-card {
+	display: flex;
+	align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.order-card img {
+	max-width: 150px;
+	margin-right: 20px;
+	object-fit: cover;
+}
+
+.order-card-details {
+	flex: 1;
+}
+
+.order-card-details h5 {
+	margin: 0;
+}
+
+.order-card-details p {
+	margin: 5px 0;
+}
+
+.order-card-details .price {
+	font-weight: bold;
+	color: #033b76;
+}

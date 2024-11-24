@@ -92,6 +92,7 @@ $(document).ready(function () {
 			productId: parseInt(getProductIdFromUrl()),
 			size: selectedSize,
 			quantity: quantity,
+			created: getCurrentTimestamp(),
 			is_deleted: false
 		};
 
@@ -104,7 +105,6 @@ $(document).ready(function () {
 		resetOrderForm();
 	});
 
-	// Reset form after order placement
 	function resetOrderForm() {
 		$('#quantity').val(1);
 		selectedSize = '';

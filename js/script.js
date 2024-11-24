@@ -39,6 +39,16 @@ function greetUser() {
 	}
 }
 
+function getCurrentTimestamp() {
+	let current = new Date();
+	let date = current.toLocaleDateString("en-CA");
+	let time = current.toLocaleTimeString("en-US", {
+		hour: '2-digit',
+		minute: '2-digit'
+	});
+	return `${date} ${time}`;
+}
+
 $(document).ready(function () {
 	greetUser();
 });
