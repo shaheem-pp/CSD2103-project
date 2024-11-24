@@ -30,7 +30,7 @@ function greetUser() {
 		}
 
 		if (user) {
-			$('#greetings').text(`${greeting}, ${user.name}`);
+			$('#greetings').text(`${greeting}, ${user.name}!`);
 		} else {
 			console.log("User not found.");
 		}
