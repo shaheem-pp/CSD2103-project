@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	// Fetch userId from session (assuming it's stored in the sessionStorage)
+	
 	let userId = sessionStorage.getItem('userId');
 
 	if (userId) {
