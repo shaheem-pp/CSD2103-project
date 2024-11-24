@@ -8,7 +8,7 @@ $(document).ready(function () {
 		const user = users.find(u => u.id === userId);
 
 		if (user) {
-			$('#greetings').text(user.name);
+			$('#userName').text(user.name);
 
 			$('.form').html(`
                 <form id="userForm">
@@ -54,7 +54,7 @@ $(document).ready(function () {
 			localStorage.setItem('users', JSON.stringify(users));
 
 			alert('User details updated successfully!');
-			$('#greetings').text(user.name);
+			$('#userName').text(user.name);
 		});
 	} else {
 		alert('User not found or session expired.');
