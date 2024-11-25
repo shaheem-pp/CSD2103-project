@@ -18,7 +18,7 @@ $(document).ready(function () {
                     </div>
                     <div class="mb-3">
                         <label for="username" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="username" value="${user.username}">
+                        <input type="text" class="form-control" id="username" value="${user.username}" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
