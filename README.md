@@ -10,4 +10,4 @@
 
 -----
 
-**Note: **Use VS Code Live Server for proper JS and data rendering [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+**Note:** Use VS Code Live Server for proper JS and data rendering [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
