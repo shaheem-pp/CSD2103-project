@@ -8,15 +8,12 @@
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js"
 		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 	<div class="container">
-
 		<div class="center-hv">
 			<div class="card shadow">
 				<div class="card-body">
@@ -37,6 +34,22 @@
 							<label for="password" class="form-label">Password</label>
 							<input type="password" class="form-control" id="password" aria-describedby="passwordField"
 								required>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="showPassword">
+								<label class="form-check-label" for="showPassword">Show Password</label>
+							</div>
+							<div id="passwordValidation" class="mt-2">
+								<p id="length" class="password-rule"><span class="text-danger">× Minimum 6
+										characters</span></p>
+								<p id="capital" class="password-rule"><span class="text-danger">× At least 1 uppercase
+										letter</span></p>
+								<p id="lowercase" class="password-rule"><span class="text-danger">× At least 1 lowercase
+										letter</span></p>
+								<p id="number" class="password-rule"><span class="text-danger">× At least 1
+										number</span></p>
+								<p id="special" class="password-rule"><span class="text-danger">× At least 1 special
+										character</span></p>
+							</div>
 						</div>
 
 						<button id="submitBtn" type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
@@ -44,7 +57,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<script src="../js/script.js"></script>
