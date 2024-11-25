@@ -7,3 +7,7 @@
 1. Hardee Manishkumar Raval - C0946490
 2. Thrisha Selvaraj - C0941392
 3. Shaheem Puzhuthini Para - C0935469
+
+-----
+
+**Note: **Use VS Code Live Server for proper JS and data rendering [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
