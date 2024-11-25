@@ -29,7 +29,7 @@ $(document).ready(function () {
 									<div class="card h-100 hover-card">
 										<img src="${product.image}" class="card-img-top product-img-card" alt="${product.name}">
 										<div class="card-body">
-											<h3 class="card-title">${product.name}</h3>
+											<h3 class="card-title product-card-title">${product.name}</h3>
 											<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
 											<p class="card-text"><strong>Price: ${product.price}</strong></p>
 										</div>
