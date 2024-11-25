@@ -59,8 +59,8 @@
 .order-card {
 	display: flex;
 	align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+	justify-content: flex-start;
+	align-items: center;
 	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	border-radius: 10px;
