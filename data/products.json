@@ -29,5 +29,69 @@
 		"image": "https://m.media-amazon.com/images/I/61RQyLTPnfL._AC_UY1000_.jpg",
 		"quantity": 15,
 		"is_deleted": false
+	},
+	{
+		"id": 3,
+		"name": "High-Waisted Trousers",
+		"shortdescription": "High-waisted trousers in soft cotton-blend fabric, with a relaxed fit and wide legs for a comfortable and stylish look.",
+		"description": "<p><strong>High-waisted trousers</strong> in soft cotton-blend fabric, with a relaxed fit and wide legs for a comfortable and stylish look.</p><ul><li><strong>Features:</strong></li><ul><li>High waist</li><li>Wide-leg fit</li><li>Side pockets</li><li>Soft cotton-blend fabric</li><li>Button and zipper closure</li></ul><li><strong>Art. No.:</strong> 1240531007</li><li><strong>Model size:</strong> The model is 176cm/5'9\" and wears a size S</li><li><strong>Length:</strong> Full length</li><li><strong>Sleeve length:</strong> N/A</li><li><strong>Fit:</strong> Relaxed, Wide leg</li><li><strong>Style:</strong> Casual trousers</li><li><strong>Description:</strong> Beige</li></ul>",
+		"price": "$29.99",
+		"category": "women",
+		"size": [
+			"S", "M", "L", "XL"
+		],
+		"color": "Beige",
+		"colorCode": "#F5F5DC",
+		"image": "https://oldnavy.gapcanada.ca/webcontent/0056/046/336/cn56046336.jpg",
+		"quantity": 20,
+		"is_deleted": false
+	},
+	{
+		"id": 4,
+		"name": "Leather Biker Jacket",
+		"shortdescription": "Classic leather biker jacket with a slim fit, zippered front, and silver-tone hardware, perfect for adding edge to any outfit.",
+		"description": "<p><strong>Leather biker jacket</strong> with a slim fit, zippered front, and silver-tone hardware, perfect for adding edge to any outfit.</p><ul><li><strong>Features:</strong></li><ul><li>Zippered front</li><li>Silver-tone hardware</li><li>Chest and side pockets</li><li>Button cuffs</li><li>Fully lined</li></ul><li><strong>Art. No.:</strong> 1240531008</li><li><strong>Model size:</strong> The model is 180cm/5'11\" and wears a size M</li><li><strong>Length:</strong> Regular length</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Slim</li><li><strong>Style:</strong> Biker jacket</li><li><strong>Description:</strong> Black</li></ul>",
+		"price": "$79.99",
+		"category": "men",
+		"size": [
+			"S", "M", "L", "XL"
+		],
+		"color": "Black",
+		"colorCode": "#000000",
+		"image": "https://m.media-amazon.com/images/I/61tV87W2m2L._AC_SX679_.jpg",
+		"quantity": 12,
+		"is_deleted": false
+	},
+	{
+		"id": 5,
+		"name": "Maxi Dress",
+		"shortdescription": "Elegant maxi dress with a v-neckline and flowy silhouette, perfect for formal or semi-formal occasions.",
+		"description": "<p><strong>Maxi dress</strong> with a v-neckline and flowy silhouette, perfect for formal or semi-formal occasions.</p><ul><li><strong>Features:</strong></li><ul><li>V-neckline</li><li>Flowy skirt</li><li>Soft fabric</li><li>Adjustable straps</li><li>Concealed zipper</li></ul><li><strong>Art. No.:</strong> 1240531009</li><li><strong>Model size:</strong> The model is 168cm/5'6\" and wears a size S</li><li><strong>Length:</strong> Full length</li><li><strong>Sleeve length:</strong> Sleeveless</li><li><strong>Fit:</strong> Flowy</li><li><strong>Style:</strong> Maxi dress</li><li><strong>Description:</strong> Navy Blue</li></ul>",
+		"price": "$59.99",
+		"category": "women",
+		"size": [
+			"S", "M", "L"
+		],
+		"color": "Navy Blue",
+		"colorCode": "#000080",
+		"image": "https://www.chictry.com/media/catalog/product/cache/5fa01475c599e3b1e88b3cd99ce29cac/1/0/10283821_indexflag_2_flagend_1.jpg",
+		"quantity": 8,
+		"is_deleted": false
+	},
+	{
+		"id": 6,
+		"name": "V-neck Sweater",
+		"shortdescription": "Soft V-neck sweater made of merino wool, offering both comfort and style for casual or office wear.",
+		"description": "<p><strong>V-neck sweater</strong> made of merino wool, offering both comfort and style for casual or office wear.</p><ul><li><strong>Features:</strong></li><ul><li>Merino wool fabric</li><li>V-neckline</li><li>Ribbed cuffs and hem</li><li>Regular fit</li><li>Lightweight</li></ul><li><strong>Art. No.:</strong> 1240531010</li><li><strong>Model size:</strong> The model is 179cm/5'10\" and wears a size M</li><li><strong>Length:</strong> Regular length</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Regular</li><li><strong>Style:</strong> Casual sweater</li><li><strong>Description:</strong> Charcoal Gray</li></ul>",
+		"price": "$39.99",
+		"category": "men",
+		"size": [
+			"S", "M", "L"
+		],
+		"color": "Charcoal Gray",
+		"colorCode": "#36454F",
+		"image": "https://m.media-amazon.com/images/I/81JW88CBYvL._AC_SX679_.jpg",
+		"quantity": 18,
+		"is_deleted": false
 	}
 ]
