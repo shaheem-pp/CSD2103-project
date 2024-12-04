@@ -1,5 +1,7 @@
+// authorization
 ifUserInSession("index.html");
 
+// login form validation
 $(document).ready(function () {
 	function getStoredUsers() {
 		const users = localStorage.getItem("users");

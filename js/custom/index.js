@@ -1,8 +1,10 @@
+// authorization
 ifNotUserInSession();
 
 $(document).ready(function () {
 	const productContainer = $('#productContainer');
 
+	// show product as per search and filter
 	function displayProducts(category, searchQuery = '') {
 		productContainer.fadeOut(300, function () {
 			$.getJSON('../data/products.json', function (data) {

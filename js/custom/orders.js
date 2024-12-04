@@ -4,7 +4,7 @@ ifNotUserInSession();
 
 $(document).ready(function () {
 	const userId = sessionStorage.getItem('userId');
-	
+
 	greetUser();
 
 	function displayOrders(userId) {

@@ -93,5 +93,68 @@
 		"image": "https://m.media-amazon.com/images/I/81JW88CBYvL._AC_SX679_.jpg",
 		"quantity": 18,
 		"is_deleted": false
+	},
+	{
+		"id": 7,
+		"name": "Sequined Mohair-Blend Cardigan",
+		"shortdescription": "Long, fitted cardigan in a soft rib knit with mohair and wool content. Vertical sequined stripes, scoop neck, and pearlescent buttons at front.",
+		"description": "<p><strong>Long, fitted cardigan</strong> in a soft rib knit with mohair and wool content. Vertical sequined stripes, scoop neck, and pearlescent buttons at front.</p><ul><li><strong>Features:</strong></li><ul><li>Narrow ribbing at neckline, cuffs, and hem</li><li>Vertical sequined stripes</li><li>Pearlescent buttons</li></ul><li><strong>Art. No.:</strong> 1264340001</li><li><strong>Model size:</strong> The model is 174cm/5'9\" and wears a size S</li><li><strong>Length:</strong> Long</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Slim fit</li><li><strong>Neckline:</strong> Low-cut Neckline, Round Neck</li><li><strong>Description:</strong> Cream, Solid-color</li></ul>",
+		"price": "$99.00",
+		"category": "women",
+		"size": [
+			"XS", "S", "M", "L", "XL", "XXL"
+		],
+		"color": "Cream",
+		"colorCode": "#FFFDD0",
+		"image": "https://image.hm.com/assets/hm/5e/4a/5e4a98070aaa56e82a7d2b22542d1dfd4f7552b2.jpg",
+		"quantity": 20,
+		"is_deleted": false
+	},
+	{
+		"id": 8,
+		"name": "Oversized Drawstring-Waist Puffer Jacket",
+		"shortdescription": "Oversized jacket in padded, quilted woven fabric. Lined hood, stand-up collar, and a zipper at front. Discreet side pockets, concealed elastic at cuffs, and a drawstring at waist with cord stoppers.",
+		"description": "<p><strong>Oversized jacket</strong> in padded, quilted woven fabric. Lined hood, stand-up collar, and a zipper at front. Discreet side pockets, concealed elastic at cuffs, and a drawstring at waist with cord stoppers.</p><ul><li><strong>Features:</strong></li><ul><li>Lined hood</li><li>Stand-up collar</li><li>Zipper at front</li><li>Discreet side pockets</li><li>Concealed elastic at cuffs</li><li>Drawstring at waist with cord stoppers</li></ul><li><strong>Art. No.:</strong> 1228976001</li><li><strong>Model size:</strong> The model wears size M</li><li><strong>Length:</strong> Regular length</li><li><strong>Fit:</strong> Oversized</li><li><strong>Collar:</strong> Stand collar</li><li><strong>Style:</strong> Puffer jacket</li><li><strong>Description:</strong> Black, Solid-color</li></ul>",
+		"price": "$74.99",
+		"category": "women",
+		"size": [
+			"XXS", "XS", "S", "M", "L", "XL"
+		],
+		"color": "Black",
+		"colorCode": "#000000",
+		"image": "https://image.hm.com/assets/hm/f8/15/f8151c1c2918d60f389f0cf0c1fc7c580f6a13c2.jpg",
+		"quantity": 15,
+		"is_deleted": false
+	},
+	{
+		"id": 9,
+		"name": "Slim Fit Lightweight Puffer Jacket",
+		"shortdescription": "Slim-fit, lightweight, padded jacket in quilted, woven fabric with a fitted silhouette. Stand-up collar, zipper at front with anti-chafe chin guard, long sleeves, and side-seam pockets with concealed zipper.",
+		"description": "<p><strong>Slim-fit, lightweight, padded jacket</strong> in quilted, woven fabric with a fitted silhouette. Stand-up collar, zipper at front with anti-chafe chin guard, long sleeves, and side-seam pockets with concealed zipper.</p><ul><li><strong>Features:</strong></li><ul><li>Stand-up collar</li><li>Zipper at front with anti-chafe chin guard</li><li>Long sleeves</li><li>Side-seam pockets with concealed zipper</li></ul><li><strong>Art. No.:</strong> 1227233002</li><li><strong>Model size:</strong> The model is 189cm/6'2\" and wears size L</li><li><strong>Length:</strong> Regular length</li><li><strong>Fit:</strong> Slim fit</li><li><strong>Collar:</strong> Stand collar</li><li><strong>Style:</strong> Puffer jacket</li><li><strong>Description:</strong> Black, Solid-color</li></ul>",
+		"price": "$49.99",
+		"category": "men",
+		"size": [
+			"XS", "S", "M", "L", "XL", "XXL"
+		],
+		"color": "Black",
+		"colorCode": "#000000",
+		"image": "https://image.hm.com/assets/hm/84/ba/84ba31c0d625406a0952c942c8647298f75224be.jpg",
+		"quantity": 20,
+		"is_deleted": false
+	}, {
+		"id": 10,
+		"name": "Wool Coat",
+		"shortdescription": "Loose-fit, ankle-length coat in felted, woven wool with pointed lapels, concealed snap fasteners at waist, and a welt chest pocket.",
+		"description": "<p><strong>Loose-fit, ankle-length coat</strong> in felted, woven wool with pointed lapels, concealed snap fasteners at waist, a welt chest pocket, and discreet side-seam pockets. Vent at back. Lined.</p><ul><li><strong>Features:</strong></li><ul><li>Pointed lapels</li><li>Concealed snap fasteners at waist</li><li>Welt chest pocket</li><li>Discreet side-seam pockets</li><li>Back vent</li></ul><li><strong>Art. No.:</strong> 1229608001</li><li><strong>Length:</strong> Long</li><li><strong>Sleeve length:</strong> Long sleeve</li><li><strong>Fit:</strong> Loose fit</li><li><strong>Collar:</strong> Pointed lapels</li><li><strong>Style:</strong> Single-breasted</li><li><strong>Description:</strong> Black, Solid-color</li></ul>",
+		"price": "$299.00",
+		"category": "women",
+		"size": [
+			"XS", "S"
+		],
+		"color": "Black",
+		"colorCode": "#000000",
+		"image": "https://image.hm.com/assets/hm/8b/c8/8bc88f620b07c97fb098a042515cf048c96e6116.jpg",
+		"quantity": 5,
+		"is_deleted": false
 	}
 ]

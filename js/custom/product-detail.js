@@ -17,6 +17,7 @@ $(document).ready(function () {
 
 		const product = data.find(item => item.id == productId);
 
+		// product data update with the id
 		if (product) {
 			$("#product-title").text(product.name);
 			$("#product-price").text(product.price);
