@@ -25,6 +25,11 @@ $(document).ready(function () {
 					`);
 				} else {
 					filteredData.forEach(product => {
+						let categoryMarkup = '';
+						if (category === 'all' && (product.category.toLowerCase() === 'men' || product.category.toLowerCase() === 'women')) {
+							const badgeClass = product.category.toLowerCase() === 'men' ? 'badge text-bg-primary' : 'badge text-bg-dangerp';
+							categoryMarkup = `<span class="badge ${badgeClass}">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</span>`;
+						}
 						let productCard = `
 							<div class="col-md-3 mb-4">
 								<a href="product-detail.html?id=${product.id}" class="card-link">
@@ -34,6 +39,7 @@ $(document).ready(function () {
 											<h3 class="card-title product-card-title">${product.name}</h3>
 											<p class="card-text product-desciption-line-limit">${product.shortdescription}</p>
 											<p class="card-text"><strong>Price: ${product.price}</strong></p>
+											${categoryMarkup}
 										</div>
 									</div>
 								</a>
